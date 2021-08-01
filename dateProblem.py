@@ -1,3 +1,5 @@
+# this problem is only for year 2021
+
 month = [31,28,31,30,31,30,31,31,30,31,30,31]
 # first day of year is monday
 
