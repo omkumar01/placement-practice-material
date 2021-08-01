@@ -1,3 +1,5 @@
+# problems based on number system
+
 def primFactors(n):
     li = []
     i=2
@@ -94,7 +96,7 @@ def removeVowels(st):
         else:
             li.append(st[i])
     return len(li)
-import re
+
 def coordinates(x,y,z,n):
     li = []
     for i in range(0,x+1):

@@ -4,7 +4,7 @@ month = [31,28,31,30,31,30,31,31,30,31,30,31]
 # first day of year is monday
 
 day = int(input("enter date: "))
-m = int(input("enter month no "))
+m = int(input("enter month no: "))
 sum = 0
 sum+=day
 
