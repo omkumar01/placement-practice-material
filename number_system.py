@@ -85,8 +85,37 @@ def fabonacci(n):
             li.append(li[i-2]+li[i-1])
     return li
 
+def removeVowels(st):
+    li = []
+    vowel = ['a', 'e', 'i','o','u','A','E','I','O','U',]
+    for i in range(len(st)):
+        if st[i] in vowel:
+            continue
+        else:
+            li.append(st[i])
+    return len(li)
+import re
+def coordinates(x,y,z,n):
+    li = []
+    for i in range(0,x+1):
+        for j in range(0,y+1):
+            for k in range(0,z+1):
+                sum = i+j+k
+                if sum!=n:
+                    temp = [i,j,k]
+                    li.append(temp)
+    return li
+
+def countSpChar(text, name):
+    return text.count(name)
+
 if __name__=="__main__":
+    
     n = 10
-    print(fabonacci(n))
+    
+    # print(countSpChar(st, 'pl'))
+    # print(coordinates(1, 1, 1, 2))
+    # print(fabonacci(n))
     # print(checkStrongNo(n))
     # print(primFactors(n))
+    
