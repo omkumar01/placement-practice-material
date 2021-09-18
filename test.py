@@ -23,3 +23,19 @@
 
 # result = math.factorial(N)/math.factorial(N-P)*math.factorial(P)*math.factorial(M)/math.factorial(M-Q)*math.factorial(Q)
 # print(Q)
+
+from collections import Counter
+
+def StringChallenge(strParam):
+    li = list(strParam)
+    occ = dict(Counter(li))
+
+    try:
+        if occ['x']==occ['o']:
+            return True
+        else:
+            return False
+    except:
+        return False
+
+print(StringChallenge(input()))
